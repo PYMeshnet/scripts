@@ -4,6 +4,9 @@
 # run as root 
 ##
 
+# load the module up
+modprobe batman-adv
+
 #stop network manager to make the mesh network work
 sudo service network-manager stop
 
@@ -26,9 +29,6 @@ iwconfig wlan0 enc off
 # add the interface to the ad-hoc network - or create it.
 iwconfig wlan0 mode ad-hoc essid PYMESHNET ap 02:12:34:56:78:9A channel 1
 #echo wlan0 > /proc/net/batman-adv/interfaces
-
-# load the module up
-modprobe batman-adv
 
 # add wlan0 to the batman-adv virtual interface
 # 	(so it can communicate with other batman-adv nodes)
