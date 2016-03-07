@@ -1,4 +1,6 @@
-# Scripts 
+# Scripts
+
+Note: `node_init` and `node_quit` are to be run on a PC / Laptop running GNU/Linux.
 
 ## node_init
 
