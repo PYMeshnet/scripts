@@ -1,0 +1,11 @@
+#!/bin/bash
+
+##
+# run as root 
+##
+
+# disable kernel module
+rmmod batman-adv
+
+#stop network manager to make the mesh network work
+sudo service network-manager restart
